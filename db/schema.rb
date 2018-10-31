@@ -10,16 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
+
+
 ActiveRecord::Schema.define(version: 2018_10_31_011332) do
-=======
-ActiveRecord::Schema.define(version: 2018_10_31_001958) do
->>>>>>> 425386e8c2ee89d85e12d527d313190bd4295177
+
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-<<<<<<< HEAD
+
   create_table "capstones", force: :cascade do |t|
     t.string "name"
     t.text "description"
@@ -28,7 +27,7 @@ ActiveRecord::Schema.define(version: 2018_10_31_001958) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "student_id"
-  end
+end
 
   create_table "educations", force: :cascade do |t|
     t.datetime "start_date"
@@ -39,7 +38,8 @@ ActiveRecord::Schema.define(version: 2018_10_31_001958) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "student_id"
-=======
+end
+
   create_table "students", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
@@ -54,7 +54,7 @@ ActiveRecord::Schema.define(version: 2018_10_31_001958) do
     t.string "photo"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
->>>>>>> 425386e8c2ee89d85e12d527d313190bd4295177
+
   end
 
 end
