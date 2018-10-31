@@ -4,16 +4,27 @@ Rails.application.routes.draw do
   post '/students' => 'students#create' 
   get '/students/:id' => 'students#show' 
   patch '/students/:id' => 'students#update'
-<<<<<<< HEAD
+
   delete '/students/:id' => 'students#destroy'
+
+  get '/experiences' => 'experiences#index'
+  post '/experiences' => 'experiences#create'
+  get '/experiences/:id' => 'experiences#show'
+  patch '/experiences/:id' => 'experiences#update'
+  delete '/experiences/:id' => 'experiences#destroy'
+
+  get '/skills' => 'skills#index'
+  post '/skills' => 'skills#create'
+  get '/skills/:id' => 'skills#show'
+  patch '/skills/:id' => 'skills#update'
+  delete '/skills/:id' => 'skills#destroy'
+
 
   get '/capstones' => 'capstones#index'
   post '/capstones' => 'capstones#create'
   get '/capstones/#id' => 'capstones#show'
   patch '/capstones/#id' => 'capstones#update'
-  delete '/capstones/#id' => 'capstones#destroy'
-=======
-  delete '/students/:id' => 'students#destroy' 
+  delete '/capstones/#id' => 'capstones#destroy' 
 
 
   get '/educations' => 'educations#index'
@@ -23,6 +34,5 @@ Rails.application.routes.draw do
   delete '/educations/#id' => 'educations#destroy'
 
 
->>>>>>> adb4b6cde2fc7fc97fc82e2abc0cdc0587133fa1
  end
 end
