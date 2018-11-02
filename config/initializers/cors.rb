@@ -1,6 +1,6 @@
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'https://blooming-caverns-85738.herokuapp.com'
+    origins 'localhost:8080'
 
     resource '*',
       headers: :any,
