@@ -33,6 +33,9 @@ Rails.application.routes.draw do
   patch '/educations/:id' => 'educations#update'
   delete '/educations/:id' => 'educations#destroy'
 
+ 
+  get "/signup" => "users#new"
+  post "/users" => "users#create"
 
  end
 end

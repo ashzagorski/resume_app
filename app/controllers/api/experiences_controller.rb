@@ -38,7 +38,7 @@ class Api::ExperiencesController < ApplicationController
   end
 
   def destroy
-    @experience = Experiences.find(params[:id])
+    @experience = Experience.find(params[:id])
     @experience.destroy
     render json: {message: "Experience successfully destroyed"}
   end
