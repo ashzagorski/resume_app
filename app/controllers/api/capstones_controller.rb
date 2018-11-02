@@ -20,7 +20,7 @@ class Api::CapstonesController < ApplicationController
   end 
 
   def show
-    @capstone= Capstone.find([:id])
+    @capstone= Capstone.find(params[:id])
     render 'show.json.jbuilder'
   end  
 
