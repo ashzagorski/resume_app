@@ -22,16 +22,16 @@ Rails.application.routes.draw do
 
   get '/capstones' => 'capstones#index'
   post '/capstones' => 'capstones#create'
-  get '/capstones/#id' => 'capstones#show'
-  patch '/capstones/#id' => 'capstones#update'
-  delete '/capstones/#id' => 'capstones#destroy' 
+  get '/capstones/:id' => 'capstones#show'
+  patch '/capstones/:id' => 'capstones#update'
+  delete '/capstones/:id' => 'capstones#destroy' 
 
 
   get '/educations' => 'educations#index'
   post '/educations' => 'educations#create'
-  get '/educations/#id' => 'educations#show'
-  patch '/educations/#id' => 'educations#update'
-  delete '/educations/#id' => 'educations#destroy'
+  get '/educations/:id' => 'educations#show'
+  patch '/educations/:id' => 'educations#update'
+  delete '/educations/:id' => 'educations#destroy'
 
 
  end

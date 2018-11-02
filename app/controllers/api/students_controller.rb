@@ -11,11 +11,11 @@ class Api::StudentsController < ApplicationController
                             email: params[:email],
                             phone_number: params[:phone_number],
                             bio: params[:bio],
-                            linkedIn_URL: params[:linkedIn_URL],
+                            linkedin_url: params[:linkedin_url],
                             twitter_handle: params[:twitter_handle],
-                            personal_website_URL: params[:personal_website_URL],
-                            online_resume_URL: params[:online_resume_URL],
-                            github_URL: params[:github_URL],
+                            personal_website_url: params[:personal_website_url],
+                            online_resume_url: params[:online_resume_url],
+                            github_url: params[:github_url],
                             photo: params[:photo]
                           )
       if @student.save 
@@ -36,14 +36,14 @@ class Api::StudentsController < ApplicationController
     @student.email = params[:email] || @student.email
     @student.phone_number = params[:phone_number] || @student.phone_number
     @student.bio = params[:bio] || @student.bio
-    @student.linkedIn_URL = params[:linkedIn_URL] || @student.linkedIn_URL
+    @student.linkedin_url = params[:linkedIn_URL] || @student.linkedin_url
     @student.twitter_handle = params[:twitter_handle] || @student.twitter_handle
-    @student.personal_website_URL = params[:personal_website_URL] || @student.personal_website_URL
-    @student.online_resume_URL = params[:online_resume_URL] || @student.online_resume_URL
-    @student.github_URL = params[:github_URL] || @student.github_URL
+    @student.personal_website_url = params[:personal_website_URL] || @student.personal_website_url
+    @student.online_resume_url = params[:online_resume_URL] || @student.online_resume_url
+    @student.github_url = params[:github_URL] || @student.github_url
     @student.photo = params[:photo] || @student.photo
 
-    if @product.save
+    if @student.save
     render "show.json.jbuilder"
     end
   end
